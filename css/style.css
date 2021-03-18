@@ -1,0 +1,289 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
+
+.wrapper {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+    margin-bottom: 41px;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 27px;
+}
+
+.header_title {
+    font-size: 36px;
+}
+
+.header_nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.nav_item {
+    margin-right: 30px;
+}
+
+.nav_item:last-child {
+    margin-right: 0;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_link:hover {
+    opacity: .75;
+}
+
+.header_subtitle {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/* ---------- Intro ---------- */
+
+.intro {
+    margin-bottom: 100px;
+    height: 868px;
+    background: url(../img/intro.svg) no-repeat center;
+}
+
+.intro_title {
+    margin-left: 400px;
+    padding-top: 249px;
+    font-size: 55px;
+    letter-spacing: -0.05em;
+}
+
+.intro_text {
+    margin-left: 400px;
+    margin-top: 88px;
+}
+
+.intro_subtitle {    
+    margin-left: 400px;
+    font-size: 48px;
+    margin-bottom: 99px;
+}
+
+.intro_button {
+    margin-left: 400px;
+    padding: 18px 14px 18px 14px;
+    background: #C4C4C4;
+    text-decoration: none;
+    color: black;
+}
+
+.intro_button:hover {
+    opacity: .75;
+}
+
+/* ---------- Offer ---------- */
+
+.offer {
+    height: 200px;    
+}
+
+/* ---------- About Me ---------- */
+
+.about {
+    margin-bottom: 250px;
+    height: 584px;
+    background: url(../img/about.svg) no-repeat center;
+}
+
+.about_title {
+    padding-top: 151px;
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+/* ---------- Request ---------- */
+
+.request {
+    margin-bottom: 200px;
+}
+
+.request_body {
+    height: 582px;
+    background: #C4C4C4;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.request_title {
+    padding-top: 102px;
+    font-size: 36px
+}
+
+.request_subtitle {
+    padding-top: 44px;
+}
+
+.request_form {
+    padding-top: 79px;
+    margin-left: 80px;
+}
+
+.form_body {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.form_field {
+    width: 290px;
+    height: 100px;
+    border: 0;
+    background: #E2E1E1;
+    border-radius: 20px;
+    padding: 0 0 0 30px;
+    margin-right: 75px;
+}
+
+.form_field::placeholder {
+    color: black;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 32px;
+}
+
+.form_button {
+    color: black;
+    width: 290px;
+    height: 100px;
+    border: 0;
+    background: #E2E1E1;
+    border-radius: 20px;
+    padding: 0;
+    color: black;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 32px;
+}
+
+.form_button:hover {
+    opacity: .75;
+}
+
+
+.request_info {
+    padding-top: 40px;
+    font-size: 24px;
+}
+
+/* ---------- Reviews ---------- */
+
+.reviews {
+    margin-bottom: 150px;
+}
+
+.reviews_title {
+    font-size: 48px;
+    margin-left: 499px;
+    margin-bottom: 55px;
+}
+
+.reviews_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 48px;
+    margin-bottom: 62px;
+}
+
+.reviews_button {
+    margin-left: 300px;
+    padding: 14px 72px 15px 72px;
+    background: #C4C4C4;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.reviews_button:hover {
+    opacity: .75;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+    padding-bottom: 50px;
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer_title {
+    font-size: 36px;
+}
+
+.contacts_list {
+    font-size: 24px;  
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.contacts_item {
+    font-size: 24px;
+    margin-right: 28px;    
+}
+
+.contacts_item:last-child {
+    margin-right: 0;
+}
+
+.contacts_icon {
+    width: 40px;
+    height: 40px;
+}
+
+.contacts_link {
+    padding-top: 6px;
+    text-decoration: none;
+    color: black;
+}
+
+.contacts_icon:hover, .contacts_link:hover {
+    opacity: .75;
+}
