@@ -1,12 +1,54 @@
-/* roboto-regular - latin_cyrillic */
+/* lato-regular */
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    src: local(''),
-        url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: url('../fonts/Lato-Regular.eot');
+    src: local('Lato Regular'), local('Lato-Regular'),
+        url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.ttf') format('truetype');
 }
+/* lato-300 */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/Lato-Light.eot');
+    src: local('Lato Light'), local('Lato-Light'),
+        url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Light.woff') format('woff'),
+        url('../fonts/Lato-Light.ttf') format('truetype');
+}
+
+/* cormorant-garamond-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/cormorant-garamond-v9-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/cormorant-garamond-v9-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/cormorant-garamond-v9-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/cormorant-garamond-v9-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/cormorant-garamond-v9-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/cormorant-garamond-v9-latin_cyrillic-regular.svg#CormorantGaramond') format('svg'); /* Legacy iOS */
+}
+/* cormorant-garamond-600 - latin_cyrillic */
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/cormorant-garamond-v9-latin_cyrillic-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/cormorant-garamond-v9-latin_cyrillic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/cormorant-garamond-v9-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/cormorant-garamond-v9-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/cormorant-garamond-v9-latin_cyrillic-600.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/cormorant-garamond-v9-latin_cyrillic-600.svg#CormorantGaramond') format('svg'); /* Legacy iOS */
+}
+
+/* ---------- HTML ---------- */
 
 html {
     box-sizing: border-box;
@@ -16,7 +58,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Lato';
     font-style: normal;
     font-size: 30px;
     line-height: 1.2;
@@ -40,11 +82,12 @@ body {
     flex-wrap: nowrap;
     align-items: flex-end;
     justify-content: space-between;
-    padding-top: 27px;
+    padding-top: 20px;
 }
 
 .header_title {
-    font-size: 36px;
+    font-family: 'Cormorant Garamond';
+    font-size: 60px;
 }
 
 .header_nav {
@@ -71,93 +114,150 @@ body {
 }
 
 .header_subtitle {
-    font-size: 24px;
-    line-height: 28px;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 69px;
+    color: black;
 }
 
 /* ---------- Intro ---------- */
 
 .intro {
-    margin-bottom: 100px;
-    height: 868px;
-    background: url(../img/intro.svg) no-repeat center;
+    margin-bottom: 201px;
+    height: 816px;
+    background: #F0F0F0;
+    border-bottom: #F8F8F8 5px solid;
 }
 
-.intro_title {
-    margin-left: 400px;
-    padding-top: 249px;
-    font-size: 55px;
+.intro_wrapper {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.intro_img {
+    margin-top: 71px;
+    width: 528px;
+    height: 796px;    
+}
+
+.intro_body {
+    margin-left: 123px;
+}
+
+.intro_title_1 {
+    margin-bottom: 18px;
+    margin-top: 304px;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 50px;
     letter-spacing: -0.05em;
 }
 
-.intro_text {
-    margin-left: 400px;
-    margin-top: 88px;
+.intro_title_2 {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: -0.05em;
+    margin-bottom: 94px;
 }
 
-.intro_subtitle {    
-    margin-left: 400px;
+.intro_subtitle {
+    font-weight: 300;
+}
+
+.intro_title_3 {
+    margin-bottom: 38px;
+    font-weight: 300;
     font-size: 48px;
-    margin-bottom: 99px;
+    letter-spacing: -0.05em;
 }
 
 .intro_button {
-    margin-left: 400px;
-    padding: 18px 14px 18px 14px;
-    background: #C4C4C4;
     text-decoration: none;
-    color: black;
+    font-family: 'Cormorant Garamond';
+    font-weight: 600;
+    font-size: 60px;
+    color: #FF9A88;
 }
 
 .intro_button:hover {
     opacity: .75;
 }
 
-/* ---------- Offer ---------- */
+/* ---------- Offer ---------- */ 
 
 .offer {
-    height: 200px;    
+    margin-bottom: 150px;  
 }
 
-/* ---------- About Me ---------- */
-
-.about {
-    margin-bottom: 250px;
-    height: 584px;
-    background: url(../img/about.svg) no-repeat center;
+.offer_wrapper {
+    width: 1300px;
+    margin: 0 auto;
 }
 
-.about_title {
-    padding-top: 151px;
-    font-size: 48px;
-    margin-bottom: 35px;
+.offer_left {
+    padding: 54px 0 54px 47px;
+    margin-bottom: 31px;
+    height: 397px;
+    background: url(../img/offer_bg.svg) no-repeat left;
+    background-size: contain;
+}
+
+.offer_title {
+    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond';
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.offer_subtitle {
+    margin-bottom: 74px;
+}
+
+.offer_price {
+    font-family: 'Cormorant Garamond';
+    font-size: 70px;
+    color: #FF9A88;
+}
+
+.offer_right {
+    padding: 54px 47px 54px 0;
+    margin-bottom: 31px;
+    height: 397px;
+    background: url(../img/offer_bg.svg) no-repeat right;
+    background-size: contain;
 }
 
 /* ---------- Request ---------- */
 
 .request {
-    margin-bottom: 200px;
+    margin-bottom: 190px;
 }
 
 .request_body {
     height: 582px;
-    background: #C4C4C4;
+    background: #F0F0F0;
     border-radius: 20px;
     text-align: center;
 }
 
 .request_title {
     padding-top: 102px;
-    font-size: 36px
+    margin-bottom: 30px;
+    font-family: 'Cormorant Garamond';
+    font-size: 50px;
 }
 
 .request_subtitle {
-    padding-top: 44px;
+    margin-bottom: 78px;
 }
 
 .request_form {
-    padding-top: 79px;
     margin-left: 80px;
+    margin-bottom: 40px;
 }
 
 .form_body {
@@ -169,53 +269,82 @@ body {
     width: 290px;
     height: 100px;
     border: 0;
-    background: #E2E1E1;
-    border-radius: 20px;
+    background: #F0F0F0;
+    border-radius: 20px;  
     padding: 0 0 0 30px;
     margin-right: 75px;
 }
 
 .form_field::placeholder {
-    color: black;
-    font-family: 'Roboto';
+    font-family: 'Lato';
     font-style: normal;
+    font-weight: normal;
     font-size: 32px;
+    color: #FF9A88;
 }
 
 .form_button {
     color: black;
     width: 290px;
     height: 100px;
-    border: 0;
-    background: #E2E1E1;
+    background: #F0F0F0;
+    border: 1px solid #FF9A88;
     border-radius: 20px;
-    padding: 0;
-    color: black;
-    font-family: 'Roboto';
+    font-family: 'Lato';
     font-style: normal;
+    font-weight: normal;
     font-size: 32px;
+    color: #FF9A88;
 }
 
 .form_button:hover {
     opacity: .75;
 }
 
-
 .request_info {
-    padding-top: 40px;
     font-size: 24px;
+}
+
+/* ---------- About Me ---------- */
+
+.about {
+    margin-bottom: 118px;
+    height: 526px;
+    background: #FFF9F8;
+}
+
+.about_wrapper {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.about_title {
+    padding-top: 93px;
+    margin-bottom: 35px;
+    font-family: 'Cormorant Garamond';
+    font-size: 48px;  
+}
+
+.about_img {
+    width: 350.67px;
+    height: 526px;
+    margin-top: -58px;
 }
 
 /* ---------- Reviews ---------- */
 
 .reviews {
-    margin-bottom: 150px;
+    margin-bottom: 135px;
 }
 
 .reviews_title {
-    font-size: 48px;
     margin-left: 499px;
-    margin-bottom: 55px;
+    margin-bottom: 53px;
+    font-family: 'Cormorant Garamond';
+    font-size: 48px;
 }
 
 .reviews_cards {
@@ -229,11 +358,13 @@ body {
 
 .reviews_button {
     margin-left: 300px;
-    padding: 14px 72px 15px 72px;
-    background: #C4C4C4;
+    padding: 14px 72px 8px 72px;
+    border: 1px solid #FF9A88;
     border-radius: 20px;
     text-decoration: none;
-    color: black;
+    font-family: 'Cormorant Garamond';
+    font-size: 35px;
+    color: #FF9A88;
 }
 
 .reviews_button:hover {
@@ -243,7 +374,7 @@ body {
 /* ---------- Footer ---------- */
 
 .footer {
-    padding-bottom: 50px;
+    padding-bottom: 319px;
 }
 
 .footer_wrapper {
@@ -254,7 +385,10 @@ body {
 }
 
 .footer_title {
-    font-size: 36px;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
 }
 
 .contacts_list {
@@ -266,7 +400,7 @@ body {
 
 .contacts_item {
     font-size: 24px;
-    margin-right: 28px;    
+    margin-right: 38px;
 }
 
 .contacts_item:last-child {
@@ -279,6 +413,7 @@ body {
 }
 
 .contacts_link {
+    margin-left: -20px;
     padding-top: 6px;
     text-decoration: none;
     color: black;
