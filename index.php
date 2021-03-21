@@ -132,7 +132,7 @@
 
 
 
-    <div class="request"><!-- ---------- Request ---------- -->
+    <div class="request" id="request"><!-- ---------- Request ---------- -->
         <div class="wrapper">
 
             <div class="request_body">
@@ -145,17 +145,35 @@
                     Оставьте свой номер телефона и я Вам перезвоню
                 </h2>
 
-                <form class="request_form" action="send.php" method="post">
-                    <div class="form_body">
-                        <input type="text" name="name" class="form_field" placeholder="Ваше имя" required>
-                        <input type="tel" name="tel" class="form_field" placeholder="+7___-___-__-__" required>
-                        <button type="submit" class="form_button">Отправить*</button>
-                    </div>
-                </form>
+                <?php
+                    if(!isset($_POST['name']) and !isset($_POST['tel'])) {
+                    ?>
+                        <form class="request_form" action="index.php#request" method="post">
+                        <div class="form_body">
+                            <input type="text" name="name" class="form_field" placeholder="Ваше имя" required>
+                            <input type="tel" name="tel" class="form_field" placeholder="+7___-___-__-__" required>
+                            <button type="submit" class="form_button">Отправить*</button>
+                        </div>
+                        </form>
 
-                <h2 class="request_info">
-                    *Нажимая эту кнопку Вы соглашаетесь с политикой конфиденциальности
-                </h2>
+                        <h2 class="request_info">
+                            *Нажимая эту кнопку Вы соглашаетесь с политикой конфиденциальности
+                        </h2>
+                    <?php
+                    } else {
+                        $name = $_POST['name'];
+                        $tel = $_POST['tel'];
+
+                        $name = urldecode($name);
+                        $tel = urldecode($tel);
+
+                        if (mail("shabbalina@mail.ru", "Заявка с сайта", "Имя: ".$name."\n\nТелефон: ".$tel."\n")) {
+                            echo "<h2 style='color: green; margin-bottom: 20px;'>Сообщение успешно отправлено</h2>";
+                        } else {
+                            echo "При отправке сообщения возникли проблемы";
+                        }
+                    }
+                ?>
 
             </div>
 
