@@ -170,7 +170,7 @@
                         if (mail("shabbalina@mail.ru", "Заявка с сайта", "Имя: ".$name."\n\nТелефон: ".$tel."\n")) {
                             echo "<h2 style='color: green; margin-bottom: 20px;'>Сообщение успешно отправлено</h2>";
                         } else {
-                            echo "При отправке сообщения возникли проблемы";
+                            echo "<h2 style='color: red; margin-bottom: 20px;'>При отправке сообщения возникли проблемы</h2>";
                         }
                     }
                 ?>
