@@ -145,10 +145,10 @@
                     Оставьте свой номер телефона и я Вам перезвоню
                 </h2>
 
-                <form class="request_form">
+                <form class="request_form" action="send.php" method="post">
                     <div class="form_body">
-                        <input type="text" name="name" class="form_field" placeholder="Ваше имя">
-                        <input type="text" name="phone" class="form_field" placeholder="+7___-___-__-__">
+                        <input type="text" name="name" class="form_field" placeholder="Ваше имя" required>
+                        <input type="tel" name="tel" class="form_field" placeholder="+7___-___-__-__" required>
                         <button type="submit" class="form_button">Отправить*</button>
                     </div>
                 </form>
