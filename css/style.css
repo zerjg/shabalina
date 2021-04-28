@@ -75,7 +75,7 @@ body {
 /* ---------- Header ---------- */
 
 .header {
-    margin-bottom: 41px;
+    margin-bottom: 11px;
 }
 
 .header_wrapper {
@@ -108,6 +108,11 @@ body {
 .nav_link {
     text-decoration: none;
     color: black;
+    font-size: 26px;
+}
+
+.nav_link_color {
+    color: #FF9A88;
 }
 
 .nav_link:hover {
@@ -125,32 +130,32 @@ body {
 /* ---------- Intro ---------- */
 
 .intro {
-    margin-bottom: 201px;
-    height: 816px;
+    margin-bottom: 125px;
+    height: 700px;
     background: #F0F0F0;
     border-bottom: #F8F8F8 5px solid;
 }
 
 .intro_wrapper {
-    width: 1300px;
+    width: 1180px;
     margin: 0 auto;
     display: flex;
     flex-wrap: nowrap;
 }
 
 .intro_img {
-    margin-top: 71px;
-    width: 528px;
-    height: 796px;    
+    margin-top: 68px;
+    width: 450px;
+    height: 678px;    
 }
 
 .intro_body {
-    margin-left: 123px;
+    margin-left: 51px;
 }
 
 .intro_title_1 {
     margin-bottom: 18px;
-    margin-top: 304px;
+    margin-top: 350px;
     font-family: 'Lato';
     font-weight: 300;
     font-size: 50px;
@@ -162,18 +167,7 @@ body {
     font-weight: 300;
     font-size: 50px;
     letter-spacing: -0.05em;
-    margin-bottom: 94px;
-}
-
-.intro_subtitle {
-    font-weight: 300;
-}
-
-.intro_title_3 {
-    margin-bottom: 38px;
-    font-weight: 300;
-    font-size: 48px;
-    letter-spacing: -0.05em;
+    margin-bottom: 63px;
 }
 
 .intro_button {
@@ -191,45 +185,48 @@ body {
 /* ---------- Offer ---------- */ 
 
 .offer {
-    margin-bottom: 150px;  
-}
-
-.offer_wrapper {
-    width: 1300px;
-    margin: 0 auto;
-}
-
-.offer_left {
-    padding: 54px 0 54px 47px;
-    margin-bottom: 31px;
-    height: 397px;
-    background: url(../img/offer_bg.svg) no-repeat left;
-    background-size: contain;
+    margin-bottom: 86px;
 }
 
 .offer_title {
-    margin-bottom: 10px;
+    font-size: 60px;
     font-family: 'Cormorant Garamond';
-    font-weight: 600;
-    font-size: 40px;
+    margin-bottom: 50px;
 }
 
-.offer_subtitle {
-    margin-bottom: 74px;
+.offer_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 108px;
+    margin-bottom: 62px;
 }
 
-.offer_price {
-    font-family: 'Cormorant Garamond';
-    font-size: 70px;
+.offer_card {
+    padding: 26px 0 54px 30px;
+    height: 240px;
+    background: url(../img/offer_bg.svg) no-repeat top left;
+    background-size: 220px, 240px;
+}
+
+.offer_card_text {
+    font-size: 26px;
+    height: 150px;
+    line-height: 1.5;
+}
+
+.offer_card_price {
+    font-size: 26px;
     color: #FF9A88;
 }
 
-.offer_right {
-    padding: 54px 47px 54px 0;
-    margin-bottom: 31px;
-    height: 397px;
-    background: url(../img/offer_bg.svg) no-repeat right;
-    background-size: contain;
+.offer_subtitle {
+    font-size: 20px;
+    text-align: center;
+}
+
+.offer_subtitle_color {
+    color: #FF9A88;
 }
 
 /* ---------- Request ---------- */
@@ -241,7 +238,6 @@ body {
 .request_body {
     height: 582px;
     background: #F0F0F0;
-    border-radius: 20px;
     text-align: center;
 }
 
@@ -306,6 +302,67 @@ body {
     font-size: 24px;
 }
 
+/* ---------- Work ---------- */
+
+.work {
+    margin-bottom: 206px;
+}
+
+.work_title {
+    font-size: 60px;
+    font-family: 'Cormorant Garamond';
+    margin-bottom: 113px;
+}
+
+.work_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    margin-bottom: 93px;
+}
+
+.work_card {
+    text-align: center;
+}
+
+.work_card_icon {
+    margin-bottom: 35px;
+}
+
+.work_card_title {
+    margin-bottom: 29px;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.work_card_text {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.work_links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* padding: 0 60px; */
+}
+
+.work_link {
+    background: url('/img/arrow_icon.svg') no-repeat;
+    background-position: 0px 10px;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 1.5;
+    color: black;
+    padding-left: 84px;
+    padding-right: 84px;
+}
+
+.work_link:hover {
+    opacity: 0.75;
+}
+
 /* ---------- About Me ---------- */
 
 .about {
@@ -342,10 +399,10 @@ body {
 }
 
 .reviews_title {
-    margin-left: 499px;
     margin-bottom: 53px;
     font-family: 'Cormorant Garamond';
     font-size: 48px;
+    text-align: center;
 }
 
 .reviews_cards {
@@ -375,7 +432,7 @@ body {
 /* ---------- Footer ---------- */
 
 .footer {
-    padding-bottom: 319px;
+    padding-bottom: 222px;
 }
 
 .footer_wrapper {
@@ -383,6 +440,7 @@ body {
     flex-wrap: nowrap;
     align-items: flex-end;
     justify-content: space-between;
+    margin-bottom: 33px;
 }
 
 .footer_title {
@@ -409,6 +467,11 @@ body {
 }
 
 .contacts_icon {
+    width: 26px;
+    height: 26px;
+}
+
+.contacts_socials_icon {
     width: 40px;
     height: 40px;
 }
@@ -420,6 +483,16 @@ body {
     color: black;
 }
 
-.contacts_icon:hover, .contacts_link:hover {
+.contacts_socials_icon:hover, .contacts_link:hover {
     opacity: .75;
+}
+
+.footer_date {
+    font-size: 15px;
+}
+
+.footer_nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
 }

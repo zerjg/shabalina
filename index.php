@@ -16,7 +16,7 @@
 
                 <div class="header_title">
                     <h1>
-                        Лилия Шабалина
+                        Лилия Шаббалина
                     </h1>
                 </div>    
 
@@ -24,6 +24,11 @@
                     <li class="nav_item">
                         <a href="#offer" class="nav_link">
                             Услуги и цены
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#work" class="nav_link nav_link_color">
+                            Как работаю
                         </a>
                     </li>
                     <li class="nav_item">
@@ -64,14 +69,8 @@
                 <h1 class="intro_title_2">
                     Хочешь увеличить доход?
                 </h1>
-                <h2 class="intro_subtitle">
-                    Есть решение:
-                </h2>
-                <h2 class="intro_title_3">
-                    Закажи рекламу в Инстаграм
-                </h2>
                 <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="intro_button">
-                    Заказать рекламу
+                    Закажи рекламу
                 </a>
 
             </div>
@@ -80,53 +79,69 @@
     </div>
 
     <div class="offer" id="offer"><!-- ---------- Offer ---------- -->
-        <div class="offer_wrapper">
+        <div class="wrapper">
 
-            <div class="offer_left">
+            <h2 class="offer_title">
+                Услуги и цены
+            </h2>
 
-                <h2 class="offer_title">
-                    НАСТРОЙКА ТАРГЕТИРОВАННОЙ РЕКЛАМЫ
-                </h2>
-                <h2 class="offer_subtitle">
-                    На увеличение подписчиков / регистрации на бесплатный <br>
-                    инфопродукт /трафик на сайт /продажу товаров
-                </h2>
-                <h2 class="offer_price">
-                    3000 руб
-                </h2>
+            <div class="offer_cards">
+
+                <div class="offer_card">
+                
+                    <h2 class="offer_card_text">
+                        Единовременная настройка<br>
+                        таргетированной рекламы <br>
+                        (без оптимизации и ведения)
+                    </h2>
+                    <h2 class="offer_card_price">
+                        15 000 ₽ + рекламный бюджет
+                    </h2>
+    
+                </div>
+
+                <div class="offer_card">
+                
+                    <h2 class="offer_card_text">
+                        Полная настройка и ведение<br>
+                        рекламной кампании<br>
+                        (с разработкой рекламных макетов)
+                    </h2>
+                    <h2 class="offer_card_price">
+                        от 20 000 ₽ в месяц + рекламный бюджет
+                    </h2>
+    
+                </div>
+
+                <div class="offer_card">
+                
+                    <h2 class="offer_card_text">
+                        Разработка рекламных макетов с<br>
+                        тезисами
+                    </h2>
+                    <h2 class="offer_card_price">
+                        5 000 ₽ (5 креативов)
+                    </h2>
+    
+                </div>
+
+                <div class="offer_card">
+                
+                    <h2 class="offer_card_text">
+                        Консультация
+                    </h2>
+                    <h2 class="offer_card_price">
+                        3 500 ₽
+                    </h2>
+    
+                </div>
 
             </div>
 
-            <div class="offer_right" align="right">
-
-                <h2 class="offer_title">
-                    ВЕДЕНИЕ И ПРОДВИЖЕНИЕ АККАУНТА Instagram
-                </h2>
-                <h2 class="offer_subtitle">
-                    На увеличение подписчиков / регистрации на бесплатный инфопродукт /<br>
-                    трафик на сайт / продажу товаров
-
-                </h2>
-                <h2 class="offer_price">
-                    10 000 руб
-                </h2>
-
-            </div>
-
-            <div class="offer_left">
-
-                <h2 class="offer_title">
-                    ПЕРСОНАЛЬНАЯ КОНСУЛЬТАЦИЯ
-                </h2>
-                <h2 class="offer_subtitle">
-                    По Вашему аккаунту в Инстаграм/монетизации<br><br>
-                </h2>
-                <h2 class="offer_price">
-                    2000 руб
-                </h2>
-
-            </div>
-
+            <p class="offer_subtitle">
+                <span class="offer_subtitle_color">ВАЖНО! </span>
+                Рекламный бюджет не входит в стоимость работ и оплачивается клиентом напрямую в Facebook/VK/ТикТок!
+            </p>
         </div>
     </div>
 
@@ -174,6 +189,64 @@
                         }
                     }
                 ?>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="work" id="work"><!-- ---------- Work ---------- -->
+        <div class="wrapper">
+
+            <h2 class="work_title">
+                Как работаем
+            </h2>
+
+            <div class="work_cards">
+
+                <div class="work_card">
+                    <img src="img/work_icon_1.svg" alt="" class="work_card_icon">
+                    <h2 class="work_card_title">
+                        Оформление заявки
+                    </h2>
+                    <p class="work_card_text">
+                        Просто оформите заявку на сайте или позвоните мне. Направлю Вам бриф для заполнения.
+                    </p>
+                </div>
+
+                <div class="work_card">
+                    <img src="img/work_icon_2.svg" alt="" class="work_card_icon">
+                    <h2 class="work_card_title">
+                        Обсуждение проекта
+                    </h2>
+                    <p class="work_card_text">
+                        Обсуждения проходят в удобной для Вас форме. Это может быть встреча оффлайн или через любой мессенджер.
+                    </p>
+                </div>
+
+                <div class="work_card">
+                    <img src="img/work_icon_3.svg" alt="" class="work_card_icon">
+                    <h2 class="work_card_title">
+                        Заключение договора
+                    </h2>
+                    <p class="work_card_text">
+                        Заполняем все необходимые документы.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="work_links">
+
+                <a href="#" class="work_link">
+                    Как оказывается услуга<br>
+                    и что в нее входит
+                </a>
+
+                <a href="#" class="work_link">
+                    Дополнительные услуги
+                </a>
 
             </div>
 
@@ -242,16 +315,16 @@
 
                 <div class="footer_title">
                     <h1>
-                        Лилия Шабалина
+                        Лилия Шаббалина
                     </h1>
                 </div>
     
                 <ul class="contacts_list">
 
                     <li class="contacts_item">
-                        <a href="#">
-                            <img class="contacts_icon" src="img/ellipse.svg" alt="">
-                        </a>
+                        
+                            <img class="contacts_icon" src="img/mail_icon.svg" alt="">
+                        
                     </li>
                     <li class="contacts_item">
                         <a href="#" class="contacts_link">
@@ -259,9 +332,9 @@
                         </a>
                     </li>
                     <li class="contacts_item">
-                        <a href="#">
-                            <img class="contacts_icon" src="img/ellipse.svg" alt="">
-                        </a>
+                        
+                            <img class="contacts_icon" src="img/phone_icon.svg" alt="">
+                        
                     </li>
                     <li class="contacts_item">
                         <a href="#" class="contacts_link">
@@ -270,20 +343,46 @@
                     </li>
                     <li class="contacts_item">
                         <a href="#">
-                            <img class="contacts_icon" src="img/ellipse.svg" alt="">
+                            <img class="contacts_socials_icon" src="img/ellipse.svg" alt="">
                         </a>
                     </li>
                     <li class="contacts_item">
                         <a href="#">
-                            <img class="contacts_icon" src="img/ellipse.svg" alt="">
+                            <img class="contacts_socials_icon" src="img/ellipse.svg" alt="">
                         </a>
                     </li>
                     <li class="contacts_item">
                         <a href="#">
-                            <img class="contacts_icon" src="img/ellipse.svg" alt="">
+                            <img class="contacts_socials_icon" src="img/ellipse.svg" alt="">
                         </a>
                     </li>
                 </ul>
+
+            </div>
+
+            <div class="footer_wrapper">
+
+                <div class="footer_date">
+                    © 2021
+                </div>
+
+                <ul class="footer_nav">
+                    <li class="nav_item">
+                        <a href="#offer" class="nav_link">
+                            Услуги и цены
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#work" class="nav_link nav_link_color">
+                            Как работаю
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#reviews" class="nav_link">
+                            Отзывы
+                        </a>
+                    </li>
+                </ul> 
 
             </div>
             
