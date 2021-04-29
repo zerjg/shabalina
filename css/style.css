@@ -211,7 +211,7 @@ body {
 
 .offer_card_text {
     font-size: 26px;
-    height: 150px;
+    height: 155px;
     line-height: 1.5;
 }
 
@@ -368,7 +368,7 @@ body {
     line-height: 1.5;
 }
 
-.active {
+.work_link_active {
     color: #FF9A88;
 }
 
@@ -448,34 +448,30 @@ body {
 }
 
 .reviews_title {
-    margin-bottom: 53px;
+    margin-bottom: 47px;
     font-family: 'Cormorant Garamond';
     font-size: 48px;
     text-align: center;
 }
 
-.reviews_cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 48px;
-    margin-bottom: 62px;
+.reviews_card {
+    width: 360px;
+    height: 682px;
+    background: #F0F0F0;
+    align-content: center;
+    display: flex;
+    align-items: center;
 }
 
-.reviews_button {
-    margin-left: 300px;
-    padding: 14px 72px 8px 72px;
-    border: 1px solid #FF9A88;
-    border-radius: 20px;
-    text-decoration: none;
-    font-family: 'Cormorant Garamond';
-    font-size: 35px;
-    color: #FF9A88;
+.reviews_card_body {
+    margin: 0 20px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #17110A;
 }
 
-.reviews_button:hover {
-    opacity: .75;
+.reviews_card_title {
+    margin-bottom: 10px;
 }
 
 /* ---------- Footer ---------- */

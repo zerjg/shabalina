@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="libs/jquery-3.6.0.min.js"></script>
-    <title>Лилия Шабалина</title>
+    <title>Лилия Шаббалина</title>
 </head>
 <body>
     <div class="header"><!-- ---------- Header ---------- -->
@@ -255,32 +257,32 @@
                         $('.work_expand_2').hide();
 
                         $('.work_link_1').click(function() {
-                            if ($(this).hasClass('active')) {
-                                $(this).removeClass('active');
+                            if ($(this).hasClass('work_link_active')) {
+                                $(this).removeClass('work_link_active');
                                 $(document).find('.work_expand_1').slideUp();
-                            } else if ($('.work_link_2').hasClass('active')) {
+                            } else if ($('.work_link_2').hasClass('work_link_active')) {
                                 $('.work_expand_2').slideUp();
-                                $('.work_link_2').removeClass('active');
-                                $(this).addClass('active');
+                                $('.work_link_2').removeClass('work_link_active');
+                                $(this).addClass('work_link_active');
                                 $('.work_expand_1').delay(450).slideDown();
                             } else {
-                                $(this).addClass('active');
+                                $(this).addClass('work_link_active');
                                 $('.work_expand_1').slideDown();
                             }
                             return false;
                         });
 
                         $('.work_link_2').click(function() {
-                            if ($(this).hasClass('active')) {
-                                $(this).removeClass('active');
+                            if ($(this).hasClass('work_link_active')) {
+                                $(this).removeClass('work_link_active');
                                 $(document).find('.work_expand_2').slideUp();
-                            } else if ($('.work_link_1').hasClass('active')) {
+                            } else if ($('.work_link_1').hasClass('work_link_active')) {
                                 $('.work_expand_1').slideUp();
-                                $('.work_link_1').removeClass('active');
-                                $(this).addClass('active');
+                                $('.work_link_1').removeClass('work_link_active');
+                                $(this).addClass('work_link_active');
                                 $('.work_expand_2').delay(450).slideDown();
                             } else {
-                                $(this).addClass('active');
+                                $(this).addClass('work_link_active');
                                 $('.work_expand_2').slideDown();
                             }
                             return false;
@@ -349,7 +351,7 @@
                         </p>
                     </li>
                 </ul>
-                <a href="#" class="work_expand_button">
+                <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="work_expand_button">
                     Оставить заявку
                 </a>
             </div>
@@ -377,7 +379,7 @@
                         </p>
                     </li>
                 </ul>
-                <a href="#" class="work_expand_button">
+                <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="work_expand_button">
                     Оставить заявку
                 </a>
             </div>
@@ -419,22 +421,99 @@
         <div class="wrapper">
 
             <h2 class="reviews_title">
-                Отзывы
+                Отзывы моих клиентов
             </h2>
 
-            <div class="reviews_cards">
+            <div class="owl-carousel owl-theme">
 
-                <img src="img/review.svg" alt="">
-                <img src="img/review.svg" alt="">
-                <img src="img/review.svg" alt="">
-                <img src="img/review.svg" alt="">
+                <div class="reviews_card">
+                    <div class="reviews_card_body">
+                        <h2 class="reviews_card_title">
+                            Иван 1
+                        </h2>
+                        <p class="reviews_card_text">
+                            Лилия очень ответственно подошла к работе: провела анализ профиля и конкурентов, тщательно изучила заполненный мной бриф. Составила текст под каждую аудиторию, также была открыта к моим предложениям. В самом начале нашей работы меня заблокировал Фэйсбук, Лилия помогла мне держать себя в руках и подсказала, что необходимо сделать  в такой ситуации :) По итогу прислала отчет о проделанной работе, так что можете не сомневаться в ее ответственности, систематичности и гибкости в работе.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="reviews_card">
+                    <div class="reviews_card_body">
+                        <h2 class="reviews_card_title">
+                            Иван 2
+                        </h2>
+                        <p class="reviews_card_text">
+                            Лилия очень ответственно подошла к работе: провела анализ профиля и конкурентов, тщательно изучила заполненный мной бриф. Составила текст под каждую аудиторию, также была открыта к моим предложениям. В самом начале нашей работы меня заблокировал Фэйсбук, Лилия помогла мне держать себя в руках и подсказала, что необходимо сделать  в такой ситуации :) По итогу прислала отчет о проделанной работе, так что можете не сомневаться в ее ответственности, систематичности и гибкости в работе.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reviews_card">
+                    <div class="reviews_card_body">
+                        <h2 class="reviews_card_title">
+                            Иван 3
+                        </h2>
+                        <p class="reviews_card_text">
+                            Лилия очень ответственно подошла к работе: провела анализ профиля и конкурентов, тщательно изучила заполненный мной бриф. Составила текст под каждую аудиторию, также была открыта к моим предложениям. В самом начале нашей работы меня заблокировал Фэйсбук, Лилия помогла мне держать себя в руках и подсказала, что необходимо сделать  в такой ситуации :) По итогу прислала отчет о проделанной работе, так что можете не сомневаться в ее ответственности, систематичности и гибкости в работе.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reviews_card">
+                    <div class="reviews_card_body">
+                        <h2 class="reviews_card_title">
+                            Иван 4
+                        </h2>
+                        <p class="reviews_card_text">
+                            Лилия очень ответственно подошла к работе: провела анализ профиля и конкурентов, тщательно изучила заполненный мной бриф. Составила текст под каждую аудиторию, также была открыта к моим предложениям. В самом начале нашей работы меня заблокировал Фэйсбук, Лилия помогла мне держать себя в руках и подсказала, что необходимо сделать  в такой ситуации :) По итогу прислала отчет о проделанной работе, так что можете не сомневаться в ее ответственности, систематичности и гибкости в работе.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reviews_card">
+                    <div class="reviews_card_body">
+                        <h2 class="reviews_card_title">
+                            Иван 5
+                        </h2>
+                        <p class="reviews_card_text">
+                            Лилия очень ответственно подошла к работе: провела анализ профиля и конкурентов, тщательно изучила заполненный мной бриф. Составила текст под каждую аудиторию, также была открыта к моим предложениям. В самом начале нашей работы меня заблокировал Фэйсбук, Лилия помогла мне держать себя в руках и подсказала, что необходимо сделать  в такой ситуации :) По итогу прислала отчет о проделанной работе, так что можете не сомневаться в ее ответственности, систематичности и гибкости в работе.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reviews_card">
+                    <div class="reviews_card_body">
+                        <h2 class="reviews_card_title">
+                            Иван 6
+                        </h2>
+                        <p class="reviews_card_text">
+                            Лилия очень ответственно подошла к работе: провела анализ профиля и конкурентов, тщательно изучила заполненный мной бриф. Составила текст под каждую аудиторию, также была открыта к моим предложениям. В самом начале нашей работы меня заблокировал Фэйсбук, Лилия помогла мне держать себя в руках и подсказала, что необходимо сделать  в такой ситуации :) По итогу прислала отчет о проделанной работе, так что можете не сомневаться в ее ответственности, систематичности и гибкости в работе.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reviews_card">
+                    <div class="reviews_card_body">
+                        <h2 class="reviews_card_title">
+                            Иван 7
+                        </h2>
+                        <p class="reviews_card_text">
+                            Лилия очень ответственно подошла к работе: провела анализ профиля и конкурентов, тщательно изучила заполненный мной бриф. Составила текст под каждую аудиторию, также была открыта к моим предложениям. В самом начале нашей работы меня заблокировал Фэйсбук, Лилия помогла мне держать себя в руках и подсказала, что необходимо сделать  в такой ситуации :) По итогу прислала отчет о проделанной работе, так что можете не сомневаться в ее ответственности, систематичности и гибкости в работе.
+                        </p>
+                    </div>
+                </div>
+                
             </div>
 
-            <a href="#" class="reviews_button">
-                Больше отзывов в Инстаграмм
-            </a>
-
+            <script>
+                $(document).ready(function(){
+                    $('.owl-carousel').owlCarousel({
+                        margin: 10,
+                        dotsEach: 1
+                    })
+                });
+            </script>
+            
         </div>
     </div>
 
@@ -459,7 +538,7 @@
                         
                     </li>
                     <li class="contacts_item">
-                        <a href="#" class="contacts_link">
+                        <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="contacts_link">
                             shabbalina@mail.ru
                         </a>
                     </li>
@@ -469,7 +548,7 @@
                         
                     </li>
                     <li class="contacts_item">
-                        <a href="#" class="contacts_link">
+                        <a href="tel:+79160283269" class="contacts_link">
                             8 916 028-32-69
                         </a>
                     </li>
@@ -520,6 +599,8 @@
             
         </div>
     </div>
-
+    
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 </body>
 </html>
