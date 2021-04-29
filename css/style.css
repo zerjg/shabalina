@@ -267,7 +267,6 @@ body {
     height: 100px;
     border: 0;
     background: #F0F0F0;
-    border-radius: 20px;  
     padding: 0 0 0 30px;
     margin-right: 75px;
 }
@@ -286,7 +285,6 @@ body {
     height: 100px;
     background: #F0F0F0;
     border: 1px solid #FF9A88;
-    border-radius: 20px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: normal;
