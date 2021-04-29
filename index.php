@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="libs/jquery-3.6.0.min.js"></script>
     <title>Лилия Шабалина</title>
 </head>
 <body>
@@ -239,15 +240,146 @@
 
             <div class="work_links">
 
-                <a href="#" class="work_link">
+                <span class="work_link_1 work_link">
                     Как оказывается услуга<br>
                     и что в нее входит
-                </a>
+                </span>
 
-                <a href="#" class="work_link">
+                <span class="work_link_2 work_link">
                     Дополнительные услуги
-                </a>
+                </span>                
 
+                <script>
+                    $(document).ready(function(){
+                        $('.work_expand_1').hide();
+                        $('.work_expand_2').hide();
+
+                        $('.work_link_1').click(function() {
+                            if ($(this).hasClass('active')) {
+                                $(this).removeClass('active');
+                                $(document).find('.work_expand_1').slideUp();
+                            } else if ($('.work_link_2').hasClass('active')) {
+                                $('.work_expand_2').slideUp();
+                                $('.work_link_2').removeClass('active');
+                                $(this).addClass('active');
+                                $('.work_expand_1').delay(450).slideDown();
+                            } else {
+                                $(this).addClass('active');
+                                $('.work_expand_1').slideDown();
+                            }
+                            return false;
+                        });
+
+                        $('.work_link_2').click(function() {
+                            if ($(this).hasClass('active')) {
+                                $(this).removeClass('active');
+                                $(document).find('.work_expand_2').slideUp();
+                            } else if ($('.work_link_1').hasClass('active')) {
+                                $('.work_expand_1').slideUp();
+                                $('.work_link_1').removeClass('active');
+                                $(this).addClass('active');
+                                $('.work_expand_2').delay(450).slideDown();
+                            } else {
+                                $(this).addClass('active');
+                                $('.work_expand_2').slideDown();
+                            }
+                            return false;
+                        });
+                    
+                    });
+                </script>
+
+            </div>
+
+            <div class="work_expand_1 work_expand">
+                <ul>
+                    <li>
+                        <p>
+                            Направляю Вам бриф для заполнения.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Проверяю посадочные площадки на готовность к приему людей и на соответствие целям рекламы (сайт, профиль соцсети). Предоставляю рекомендации что нужно изменить или дополнить.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Создаю стратегию запуска компании (какие цели будем использовать, с какой аудитории начинаем, куда льем трафик).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Устанавливаю пиксель, при наличии сайта.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Подготавливаю для Вас рекламные тексты и создаем креативы. В стоимость входят не более 8-ти креативов, далее 500 руб. за креатив.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Сложные анимированные креативы создаются за дополнительную плату – от 1500 руб. за креатив.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Создаю аудитории (используем Ваши источники для создания look-a-like – базу с номерами телефонов Ваших клиентов, аудитории сайта или профиля в Instagram).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Запускаю тестовые рекламные компании для выявления лучших рабочих креативов, аудиторий.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Анализирую запущенные рекламные кампании и оптимизирую их.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Масштабирую лучшие кампании (увеличиваем число целевых действий – заявки, клики, конверсии, при сохранении их стоимости).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Запускаю кампании ретаргета.
+                        </p>
+                    </li>
+                </ul>
+                <a href="#" class="work_expand_button">
+                    Оставить заявку
+                </a>
+            </div>
+
+            <div class="work_expand_2 work_expand">
+                <ul>
+                    <li>
+                        <p>
+                            Консультация: Skype/аудио связи в формате вопрос-ответ по продвижению Вашего бизнеса.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Высылаю бриф для заполнения.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Два дня на подготовку, созваниваемся и подробно разбираем вопросы по Вашему запросу.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Прописываю план работ на ближайший месяц.
+                        </p>
+                    </li>
+                </ul>
+                <a href="#" class="work_expand_button">
+                    Оставить заявку
+                </a>
             </div>
 
         </div>
