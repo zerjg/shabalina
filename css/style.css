@@ -411,7 +411,7 @@ body {
 }
 
 .work_link {
-    background: url('/img/arrow_icon.svg') no-repeat;
+    background: url(../img/arrow_icon.svg) no-repeat;
     background-position: 0px 7px;
     text-decoration: none;
     cursor: pointer;
@@ -456,7 +456,7 @@ body {
 }
 
 .work_expand li {
-    background: url('/img/checkbox_icon.svg') no-repeat top left;
+    background: url(../img/checkbox_icon.svg) no-repeat top left;
     background-position: 0 5px;
     padding-left: 30px;
     padding-bottom: 30px;
@@ -1015,7 +1015,7 @@ body {
     }
     
     .work_link {
-        background: url('/img/arrow_icon_sm.svg') no-repeat;
+        background: url(../img/arrow_icon_sm.svg) no-repeat;
         background-position: 0px 7px;
         font-size: 18px;
         color: black;
