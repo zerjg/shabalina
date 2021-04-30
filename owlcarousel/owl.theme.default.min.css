@@ -36,7 +36,7 @@
     width:20px;
     height:20px;
     margin:5px 7px;
-    background: url(/img/slider_dot.svg) no-repeat;
+    background: url(../img/slider_dot.svg) no-repeat;
     display:block;
     -webkit-backface-visibility:visible;
     transition:opacity .2s ease;
@@ -44,5 +44,5 @@
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span{
-    background: url(/img/slider_dot_active.svg) no-repeat;
+    background: url(../img/slider_dot_active.svg) no-repeat;
 }
