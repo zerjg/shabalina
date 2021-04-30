@@ -15,6 +15,18 @@
     <div class="header"><!-- ---------- Header ---------- -->
         <div class="wrapper">
 
+            <div class="header_phone">
+                <img class="header_phone_icon" src="img/phone_icon.svg" alt="">
+                <a href="tel:+79160283269" class="header_phone_link">
+                    8 916 028-32-69
+                </a>
+            </div>
+            <div class="header_burger burger">
+                <span class="burger_line burger_line_1"></span>
+                <span class="burger_line burger_line_2"></span>
+                <span class="burger_line burger_line_3"></span>
+            </div>
+
             <div class="header_wrapper">
 
                 <div class="header_title">
@@ -23,28 +35,56 @@
                     </h1>
                 </div>    
 
-                <ul class="header_nav">
-                    <li class="nav_item">
-                        <a href="#offer" class="nav_link">
-                            Услуги и цены
+                <div class="header_nav">
+                    <div class="header_title_hide">
+                        <h1>
+                            Лилия Шаббалина
+                        </h1>
+                    </div>   
+                    <ul class="header_list">
+                        <li class="nav_item">
+                            <a href="#offer" class="nav_link">
+                                Услуги и цены
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#work" class="nav_link">
+                                Как работаю
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#reviews" class="nav_link">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contacts" class="nav_link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header_nav_close">
+                        <span class="header_nav_close_line"></span>
+                        <span class="header_nav_close_line"></span>
+                    </div>
+                    <div class="header_nav_contacts">
+                        <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="work_expand_button">
+                            Оставить заявку
                         </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#work" class="nav_link nav_link_color">
-                            Как работаю
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#reviews" class="nav_link">
-                            Отзывы
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#contacts" class="nav_link">
-                            Контакты
-                        </a>
-                    </li>
-                </ul>         
+                        <div class="work_expand_contacts">
+                            <img class="work_expand_contacts_icon" src="img/phone_icon.svg" alt="">
+                            <a href="tel:+79160283269" class="work_expand_contacts_link">
+                                8 916 028-32-69
+                            </a>
+                        </div>
+                        <div class="work_expand_contacts">
+                            <img class="work_expand_contacts_icon" src="img/mail_icon.svg" alt="">
+                            <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="work_expand_contacts_link">
+                                shabbalina@mail.ru
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -53,6 +93,24 @@
                     Ваш таргетолог в Инстаграм
                 </h2>
             </div>
+
+            <script>
+                $(document).ready(function(){
+
+                    $('.burger').click(function() {
+                        $('.header_nav').addClass('header_nav_active');
+                    });
+
+                    $('.header_nav_close').click(function() {
+                        $('.header_nav').removeClass('header_nav_active');
+                    });
+
+                    $('.nav_link').click(function() {
+                        $('.header_nav').removeClass('header_nav_active');
+                    });
+                
+                });
+            </script>
             
         </div>
     </div>
@@ -72,9 +130,11 @@
                 <h1 class="intro_title_2">
                     Хочешь увеличить доход?
                 </h1>
-                <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="intro_button">
-                    Закажи рекламу
-                </a>
+                <div class="intro_button">
+                    <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="intro_button_link">
+                        Закажи рекламу
+                    </a>
+                </div>
 
             </div>
 
@@ -156,7 +216,7 @@
             <div class="request_body">
                 
                 <h2 class="request_title">
-                    Записаться на консультацию
+                    Заявка на консультацию
                 </h2>
 
                 <h2 class="request_subtitle">
@@ -186,9 +246,9 @@
                         $tel = urldecode($tel);
 
                         if (mail("shabbalina@mail.ru", "Заявка с сайта", "Имя: ".$name."\n\nТелефон: ".$tel."\n")) {
-                            echo "<h2 style='color: green; margin-bottom: 20px;'>Сообщение успешно отправлено</h2>";
+                            echo "<h2 class='msg_green'>Сообщение успешно отправлено</h2>";
                         } else {
-                            echo "<h2 style='color: red; margin-bottom: 20px;'>При отправке сообщения возникли проблемы</h2>";
+                            echo "<h2 class='msg_red'>При отправке сообщения возникли проблемы</h2>";
                         }
                     }
                 ?>
@@ -209,6 +269,7 @@
             <div class="work_cards">
 
                 <div class="work_card">
+                    <span class="work_card_num">01</span>
                     <img src="img/work_icon_1.svg" alt="" class="work_card_icon">
                     <h2 class="work_card_title">
                         Оформление заявки
@@ -218,7 +279,8 @@
                     </p>
                 </div>
 
-                <div class="work_card">
+                <div class="work_card work_card_bg_grey">
+                    <span class="work_card_num">02</span>
                     <img src="img/work_icon_2.svg" alt="" class="work_card_icon">
                     <h2 class="work_card_title">
                         Обсуждение проекта
@@ -229,6 +291,7 @@
                 </div>
 
                 <div class="work_card">
+                    <span class="work_card_num">03</span>
                     <img src="img/work_icon_3.svg" alt="" class="work_card_icon">
                     <h2 class="work_card_title">
                         Заключение договора
@@ -269,7 +332,6 @@
                                 $(this).addClass('work_link_active');
                                 $('.work_expand_1').slideDown();
                             }
-                            return false;
                         });
 
                         $('.work_link_2').click(function() {
@@ -285,7 +347,6 @@
                                 $(this).addClass('work_link_active');
                                 $('.work_expand_2').slideDown();
                             }
-                            return false;
                         });
                     
                     });
@@ -354,6 +415,18 @@
                 <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="work_expand_button">
                     Оставить заявку
                 </a>
+                <div class="work_expand_contacts">
+                    <img class="work_expand_contacts_icon" src="img/phone_icon.svg" alt="">
+                    <a href="tel:+79160283269" class="work_expand_contacts_link">
+                        8 916 028-32-69
+                    </a>
+                </div>
+                <div class="work_expand_contacts">
+                    <img class="work_expand_contacts_icon" src="img/mail_icon.svg" alt="">
+                    <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="work_expand_contacts_link">
+                        shabbalina@mail.ru
+                    </a>
+                </div>
             </div>
 
             <div class="work_expand_2 work_expand">
@@ -382,6 +455,18 @@
                 <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="work_expand_button">
                     Оставить заявку
                 </a>
+                <div class="work_expand_contacts">
+                    <img class="work_expand_contacts_icon" src="img/phone_icon.svg" alt="">
+                    <a href="tel:+79160283269" class="work_expand_contacts_link">
+                        8 916 028-32-69
+                    </a>
+                </div>
+                <div class="work_expand_contacts">
+                    <img class="work_expand_contacts_icon" src="img/mail_icon.svg" alt="">
+                    <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="work_expand_contacts_link">
+                        shabbalina@mail.ru
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -397,6 +482,8 @@
                 <h2 class="about_title">
                     О себе
                 </h2>
+
+                <img src="img/photo2.png" alt="" class="about_img_hide"> 
     
                 <p class="about_text">
                     Меня зовут Лилия Шабалина.<br>
@@ -424,7 +511,7 @@
                 Отзывы моих клиентов
             </h2>
 
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme reviews_cards">
 
                 <div class="reviews_card">
                     <div class="reviews_card_body">
@@ -509,7 +596,16 @@
                 $(document).ready(function(){
                     $('.owl-carousel').owlCarousel({
                         margin: 10,
-                        dotsEach: 1
+                        dotsEach: 1,
+                        responsiveClass: true,
+                            responsive:{
+                                0:{
+                                    items: 1
+                                },
+                                767:{
+                                    items: 3
+                                }
+                            }
                     })
                 });
             </script>
@@ -529,41 +625,34 @@
                         Лилия Шаббалина
                     </h1>
                 </div>
+
+                <div class="footer_subtitle">
+                    <h2>
+                        Контакты:
+                    </h2>
+                </div>
     
                 <ul class="contacts_list">
-
                     <li class="contacts_item">
-                        
-                            <img class="contacts_icon" src="img/mail_icon.svg" alt="">
-                        
-                    </li>
-                    <li class="contacts_item">
-                        <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="contacts_link">
-                            shabbalina@mail.ru
-                        </a>
-                    </li>
-                    <li class="contacts_item">
-                        
-                            <img class="contacts_icon" src="img/phone_icon.svg" alt="">
-                        
-                    </li>
-                    <li class="contacts_item">
+                        <img class="contacts_icon" src="img/phone_icon.svg" alt="">
                         <a href="tel:+79160283269" class="contacts_link">
                             8 916 028-32-69
                         </a>
                     </li>
                     <li class="contacts_item">
-                        <a href="#">
-                            <img class="contacts_socials_icon" src="img/ellipse.svg" alt="">
+                        <img class="contacts_icon" src="img/mail_icon.svg" alt="">
+                        <a href="mailto:shabbalina@mail.ru?subject=ТемаПисьма&body=ТелоПисьма" target="_blank" rel="noopener noreferrer" class="contacts_link">
+                            shabbalina@mail.ru
                         </a>
                     </li>
                     <li class="contacts_item">
-                        <a href="#">
+                        <a href="#" class="contacts_socials_link">
                             <img class="contacts_socials_icon" src="img/ellipse.svg" alt="">
                         </a>
-                    </li>
-                    <li class="contacts_item">
-                        <a href="#">
+                        <a href="#" class="contacts_socials_link">
+                            <img class="contacts_socials_icon" src="img/ellipse.svg" alt="">
+                        </a>
+                        <a href="#" class="contacts_socials_link">
                             <img class="contacts_socials_icon" src="img/ellipse.svg" alt="">
                         </a>
                     </li>
@@ -578,22 +667,28 @@
                 </div>
 
                 <ul class="footer_nav">
-                    <li class="nav_item">
-                        <a href="#offer" class="nav_link">
+                    <li class="footer_nav_item">
+                        <a href="#offer" class="footer_nav_link">
                             Услуги и цены
                         </a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#work" class="nav_link nav_link_color">
+                    <li class="footer_nav_item">
+                        <a href="#work" class="footer_nav_link">
                             Как работаю
                         </a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#reviews" class="nav_link">
+                    <li class="footer_nav_item">
+                        <a href="#reviews" class="footer_nav_link">
                             Отзывы
                         </a>
                     </li>
-                </ul> 
+                </ul>
+
+                <div class="footer_caption">
+                    <span>
+                        © Лилия Шаббалина
+                    </span>
+                </div>
 
             </div>
             
