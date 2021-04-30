@@ -723,7 +723,7 @@ body {
     }
 
     .header_list {
-        margin-bottom: 142px;
+        margin-bottom: 100px;
     }
 
     .header_phone {
@@ -752,7 +752,7 @@ body {
         font-size: 15px;
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(23, 17, 10, 0.3);
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .header_subtitle {
