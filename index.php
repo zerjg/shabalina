@@ -245,7 +245,7 @@
                         $name = urldecode($name);
                         $tel = urldecode($tel);
 
-                        if (mail("shabbalina@mail.ru", "Заявка с сайта", "Имя: ".$name."\n\nТелефон: ".$tel."\n")) {
+                        if (mail("shabbalina@mail.ru", "Заявка с сайта", "Имя: ".$name."\n\nТелефон: ".$tel."\n", "From: shabbalina.ru\r\n")) {
                             echo "<h2 class='msg_green'>Сообщение успешно отправлено</h2>";
                         } else {
                             echo "<h2 class='msg_red'>При отправке сообщения возникли проблемы</h2>";
